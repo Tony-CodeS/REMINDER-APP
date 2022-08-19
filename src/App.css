@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Allura&family=Montserrat:wght@400;500&family=Pacifico&display=swap');
+html, body{
+overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: rgb(93, 73, 155);
+    font-family: 'Montserrat', sans-serif;
+
+}
+.form-container{
+    background-color:rgb(120, 85, 226);
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    height: 700px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#text{
+    width: 400px; 
+    border: none; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px; 
+    padding: 10px;
+}
+
+#edit{
+   
+    border: none; 
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+  
+}
+
+
+#submit-button{
+    border: none; 
+    font-size: 20px; 
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    background-color: rgb(93, 73, 155); ;
+  
+}
+
+#display-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid black;
+}
+
+#delete-button{
+  border: none; 
+  font-size: 20px; 
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  background-color: rgb(93, 73, 155); ;
+  margin: 10px;
+ 
+}
+
+#check{
+    width: 20px;
+    height: 20px;
+}
+
+#todo-list{
+    align-content: center;
+}
+
+@media screen and  (max-width:1024px) {
+    
+        .form-container{
+            background-color:rgb(120, 85, 226);
+            width: 50%;
+            text-align: center; 
+            height: 700px;
+            margin: auto;
+        }
+
+        #text{
+            width: 300px; 
+            border: none; 
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px; 
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px; 
+            padding: 10px;
+        }
+
+        #display-div{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+            background-color: bisque;
+            border: 3px solid black;
+        }
+}
+
+
+@media screen and  (max-width:850px){
+    .form-container{
+        background-color:rgb(120, 85, 226);
+        width: 50%;
+        text-align: center; 
+        height: 700px;
+        margin: auto;
+    }
+
+    html, body{
+        overflow-x: hidden;
+    }
+
+    
+    #text{
+        width: 200px; 
+        border: none; 
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; 
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px; 
+        padding: 10px;
+    }
+
+    
+/* #edit{
+   margin:20px;
+ 
+} */
+
+
+#delete-button{
+    border: none; 
+    font-size: 10px; 
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+  
   }
+
+  #check{
+    width: 15px;
+    height: 15px;
+}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width:550px) {
+    .form-container{
+        width: 100%;
+    }
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width:350px){
+    #text{
+        
+        font-size: 10px; 
+    
+    }
+
+    
+#submit-button{
+    font-size: 10px; 
+    
+  
+}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width:280px){
+    #text{
+        width: 150px; 
+    }
+    
+    #submit-button{
+        font-size: 10px; 
+        
+      
+    }
 }
